@@ -1,1 +1,4 @@
-html {direction: rtl;}
+html {
+  direction: rtl;
+  color: red;
+}
