@@ -51,17 +51,17 @@
                 fclose($f);
                 if ($data == 0) {
                     echo "<section id='section1'>
-                                    <img src='Pictures/pic1.png'>
+                                    <img src='pic1.png'>
                                     <form method='post'>
                                         <input type='text' name='ans1'>
                                         <input type='submit' value='Enter'>
                                     </form>
                                 </section>";
-                    echo "<form action='computer_12_1.php' method='post'>
+                    echo "<form action='computer_12.php' method='post'>
                                 <input name='guide1' type='submit' value='راهنمایی'>
                               </form>";
                     if (isset($_POST["guide1"])) {
-                        echo "<img src='guidance/guide1.png'>";
+                        echo "<img src='guide1.png'>";
                     }
                     if (isset($_POST["ans1"])) {
                         if ($_POST['ans1'] == 2) {
@@ -69,7 +69,7 @@
                             fwrite($f1, 1);
                             fclose($f1);
                             echo "<p>پاسخ شما درست می باشد</p>";
-                            echo "<form action='computer_12_1.php' method='post'>
+                            echo "<form action='computer_12.php' method='post'>
                                         <label>پرسش 2</label>
                                         <input type='submit'>
                                       </form>";
@@ -79,7 +79,7 @@
                     }    
                 } else if ($data == 1) {
                     echo "<section id='section2'>
-                                    <img src='Pictures/pic2.png'>
+                                    <img src='pic2.png'>
                                     <form action='' method='post'>
                                         <input type='text' name='ans2'>
                                         <input type='submit' value='Enter'>
@@ -91,7 +91,7 @@
                             fwrite($f1, 2);
                             fclose($f1);
                             echo "<p>پاسخ شما درست می باشد</p>";
-                            echo "<form action='computer_12_1.php' method='post'>
+                            echo "<form action='computer_12.php' method='post'>
                                         <label>پرسش 3</label>
                                         <input type='submit'>
                                       </form>";
@@ -101,17 +101,17 @@
                     }       
                 } else  if ($data == 2) {
                     echo "<section id='section3'>
-                                    <img src='Pictures/pic3.png'>
+                                    <img src='pic3.png'>
                                     <form action='' method='post'>
                                         <input type='text' name='ans3'>
                                         <input type='submit' value='Enter'>
                                     </form>
                                 </section>";
-                    echo "<form action='computer_12_1.php' method='post'>
+                    echo "<form action='computer_12.php' method='post'>
                                 <input name='guide3' type='submit' value='راهنمایی'>
                               </form>";
                     if (isset($_POST["guide3"])) {
-                        echo "<img src='guidance/guide3.png'>";
+                        echo "<img src='guide3.png'>";
                   }
                     if (isset($_POST["ans3"])) {
                         if ($_POST['ans3'] == 2) {
@@ -119,7 +119,7 @@
                             fwrite($f1, 3);
                             fclose($f1);
                             echo "<p>پاسخ شما درست می باشد</p>";
-                            echo "<form action='computer_12_1.php' method='post'>
+                            echo "<form action='computer_12.php' method='post'>
                                         <label>پرسش 4</label>
                                         <input type='submit'>
                                     </form>";
